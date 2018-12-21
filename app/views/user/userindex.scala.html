@@ -1,0 +1,43 @@
+@(msg: String, datas :List[Artist])
+	
+	@main("Sample Page") {
+		
+		<h1>アーティスト一覧</h1>
+		<p>@msg</p>
+		<hr>
+<table border="1">
+	<tr>
+		<th>id</th>
+		<th>名前</th>
+		<th>性別</th>
+		<th>年齢</th>
+		<th>事務所ID</th>
+		<th>事務所名</th>
+		<th>得意な声</th>
+		<th>１ワード毎の値段</th>
+		<th>割り増し割合率</th>
+		<th>登録日</th>
+		<th>更新日</th>
+	</tr>
+		@for( res <- datas){
+			<tr>
+				<td>@res.id</td>
+				<td>@res.name</td>
+				@if(res.sex ==1){
+					<td>male</td>
+				}else{
+					<td>female</td>
+				}
+				<td>@res.age</td>
+				<td>@res.officeid</td>
+				<td>@res.officename</td>
+				<td>@res.typeid</td>
+				<td>@res.wordprice</td>
+				<td>@res.rate</td>
+				<th><a class="btn btn-default" href= "/artist/detail/@res.id">発注</a></th>
+				
+			</tr>
+		}
+</table>
+
+	}

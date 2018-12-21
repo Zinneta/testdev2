@@ -1,0 +1,27 @@
+	@(msg: String, form1: Form[models.Muser])
+	
+	@main("Sample Page") {
+		
+		<h1>ユーザ登録</h1>
+		<p>@msg</p>
+		@helper.form(action = routes.UserController.userCreate){
+			
+			@(helper.inputText (
+				field = form1("name"),
+				args = '_label -> "名前",
+				'size -> 15,
+				'_showConstraints -> false,
+				'_error -> "入力が正しくありません"
+			))
+			@(helper.inputText (
+				field = form1("password"),
+				args = '_label -> "パスワード",
+				'_help -> "半角英数８文字以上のパスワード",
+				'size -> 8
+			))
+			@(helper.inputText (
+				field = form1("mail")
+			))
+			<input type="submit">
+		}
+	}

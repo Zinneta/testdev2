@@ -1,0 +1,36 @@
+	@(msg: String, form1: Form[models.Artist])
+	
+	@main("Sample Page") {
+		
+		<h1>事務所登録</h1>
+		<p>@msg</p>
+		@helper.form(action = routes.ArtistController.artistCreate){
+			
+			@(helper.inputText (
+				field = form1("name")
+			))
+			@(helper.inputText (
+				field = form1("sex")
+			))
+			@(helper.inputText (
+				field = form1("age")
+			))
+			@(helper.inputText (
+				field = form1("officeid")
+			))
+			@(helper.inputText (
+				field = form1("officename")
+			))
+			@(helper.inputText (
+				field = form1("typeid")
+			))
+			@(helper.inputText (
+				field = form1("wordprice")
+			))
+			@(helper.inputText (
+				field = form1("rate")
+			))
+			
+			<input type="submit">
+		}
+	}

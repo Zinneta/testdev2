@@ -1,0 +1,17 @@
+@(title: String)(form: Form[authController.OfficeLogin])
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+    </head>
+    <body>
+    <h1>office</h1>
+        @helper.form(action = routes.authController.officeAuth) {
+        	@helper.inputText(form("name"))
+        	@helper.inputPassword(form("email"))
+        	@helper.inputPassword(form("password"))
+        	<input type="submit" value ="Login">
+        }
+    </body>
+</html>
