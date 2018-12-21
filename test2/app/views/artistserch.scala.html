@@ -1,0 +1,19 @@
+@(msg: String, form1: Form[ArtistController.FindForm],datas :List[Artist])
+	
+	@main("Sample Page") {
+		
+		<h1>アーティスト検索</h1>
+		<p>@msg</p>
+		@helper.form(action = routes.ArtistController.artistSerch){
+			
+			@(helper.inputText (
+				field = form1("name")
+			))
+			@(helper.inputText (
+				field = form1("officeid")
+			))
+			<input type="submit">
+		}
+		<hr>
+		<p>@datas</p>
+	}

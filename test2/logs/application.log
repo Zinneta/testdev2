@@ -1,0 +1,626 @@
+2017-05-18 02:13:41,795 - [INFO] - from play in pool-4-thread-3 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2017-05-18 02:17:22,376 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:mysql://localhost/javaplaytest, Username = root, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2017-05-18 02:17:23,344 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/javaplaytest
+
+2017-05-18 02:17:23,497 - [DEBUG] - from org.reflections.Reflections in play-internal-execution-context-1 
+going to scan these urls:
+	jar:file:/usr/local/play-2.2.2/repository/local/com.typesafe.play/play_2.10/2.2.2/jars/play_2.10.jar!/
+	file:/var/www/html/test2/target/scala-2.10/classes/
+
+
+2017-05-18 02:17:23,739 - [INFO] - from org.reflections.Reflections in play-internal-execution-context-1 
+Reflections took 241 ms to scan 2 urls, producing 10 keys and 19 values 
+
+2017-05-18 02:17:23,879 - [INFO] - from com.avaje.ebeaninternal.server.core.DefaultServerFactory in play-internal-execution-context-1 
+DatabasePlatform name:default platform:mysql
+
+2017-05-18 02:17:24,397 - [DEBUG] - from com.avaje.ebeaninternal.api.ClassLoadContext in play-internal-execution-context-1 
+Context ClassLoader play.PlayRun$$anonfun$11$$anon$2 child of Caller ClassLoader play.PlayRun$$anonfun$10$$anon$1
+
+2017-05-18 02:17:24,413 - [DEBUG] - from com.avaje.ebeaninternal.server.type.DefaultTypeManager in play-internal-execution-context-1 
+Registering Joda data types
+
+2017-05-18 02:17:24,546 - [DEBUG] - from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in play-internal-execution-context-1 
+BeanPersistControllers[0] BeanFinders[0] BeanPersistListeners[0] BeanQueryAdapters[0]
+
+2017-05-18 02:17:24,851 - [INFO] - from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in play-internal-execution-context-1 
+Entities enhanced[4] subclassed[0]
+
+2017-05-18 02:17:24,932 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+ObjectName = JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 02:17:24,934 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+name = JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 02:17:24,936 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+Send create notification of object JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 02:17:24,940 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+JMX.mbean.registered JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 02:17:24,952 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+ObjectName = Ebean:server=default2,key=AutoFetch
+
+2017-05-18 02:17:24,952 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+name = Ebean:server=default2,key=AutoFetch
+
+2017-05-18 02:17:24,952 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+Send create notification of object Ebean:key=AutoFetch,server=default2
+
+2017-05-18 02:17:24,953 - [DEBUG] - from javax.management.mbeanserver in play-internal-execution-context-1 
+JMX.mbean.registered Ebean:server=default2,key=AutoFetch
+
+2017-05-18 02:17:24,959 - [DEBUG] - from com.avaje.ebean.Ebean in play-internal-execution-context-1 
+GlobalProperties.isSkipPrimaryServer()
+
+2017-05-18 02:17:25,136 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2017-05-18 02:17:25,154 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2017-05-18 02:17:25,314 - [DEBUG] - from net.sf.ehcache.config.ConfigurationFactory in play-internal-execution-context-1 
+Configuring ehcache from URL: jar:file:/usr/local/play-2.2.2/repository/local/com.typesafe.play/play-cache_2.10/2.2.2/jars/play-cache_2.10.jar!/ehcache-default.xml
+
+2017-05-18 02:17:25,316 - [DEBUG] - from net.sf.ehcache.config.ConfigurationFactory in play-internal-execution-context-1 
+Configuring ehcache from InputStream
+
+2017-05-18 02:17:25,376 - [DEBUG] - from net.sf.ehcache.config.BeanHandler in play-internal-execution-context-1 
+Ignoring ehcache attribute xmlns:xsi
+
+2017-05-18 02:17:25,377 - [DEBUG] - from net.sf.ehcache.config.BeanHandler in play-internal-execution-context-1 
+Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+
+2017-05-18 02:17:25,441 - [DEBUG] - from net.sf.ehcache.CacheManager in play-internal-execution-context-1 
+Creating new CacheManager with config URL: jar:file:/usr/local/play-2.2.2/repository/local/com.typesafe.play/play-cache_2.10/2.2.2/jars/play-cache_2.10.jar!/ehcache-default.xml
+
+2017-05-18 02:17:25,463 - [DEBUG] - from net.sf.ehcache.util.PropertyUtil in play-internal-execution-context-1 
+propertiesString is null.
+
+2017-05-18 02:17:25,529 - [DEBUG] - from net.sf.ehcache.config.ConfigurationHelper in play-internal-execution-context-1 
+No CacheManagerEventListenerFactory class specified. Skipping...
+
+2017-05-18 02:17:25,715 - [DEBUG] - from net.sf.ehcache.Cache in play-internal-execution-context-1 
+No BootstrapCacheLoaderFactory class specified. Skipping...
+
+2017-05-18 02:17:25,716 - [DEBUG] - from net.sf.ehcache.Cache in play-internal-execution-context-1 
+CacheWriter factory not configured. Skipping...
+
+2017-05-18 02:17:25,741 - [DEBUG] - from net.sf.ehcache.config.ConfigurationHelper in play-internal-execution-context-1 
+No CacheExceptionHandlerFactory class specified. Skipping...
+
+2017-05-18 02:17:25,805 - [DEBUG] - from net.sf.ehcache.store.MemoryStore in play-internal-execution-context-1 
+Initialized net.sf.ehcache.store.NotifyingMemoryStore for play
+
+2017-05-18 02:17:25,831 - [DEBUG] - from net.sf.ehcache.Cache in play-internal-execution-context-1 
+Initialised cache: play
+
+2017-05-18 02:17:25,831 - [DEBUG] - from net.sf.ehcache.config.ConfigurationHelper in play-internal-execution-context-1 
+CacheDecoratorFactory not configured for defaultCache. Skipping for 'play'.
+
+2017-05-18 02:17:25,850 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2017-05-18 02:17:27,076 - [INFO] - from akka.event.slf4j.Slf4jLogger in play-akka.actor.default-dispatcher-3 
+Slf4jLogger started
+
+2017-05-18 02:17:27,514 - [DEBUG] - from org.jboss.logging in play-akka.actor.default-dispatcher-4 
+Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+
+2017-05-18 02:17:27,516 - [INFO] - from org.hibernate.validator.internal.util.Version in play-akka.actor.default-dispatcher-4 
+HV000001: Hibernate Validator 5.0.1.Final
+
+2017-05-18 02:17:27,583 - [DEBUG] - from org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver in play-akka.actor.default-dispatcher-4 
+Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+
+2017-05-18 02:17:27,586 - [DEBUG] - from org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver in play-akka.actor.default-dispatcher-4 
+Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+
+2017-05-18 02:17:27,617 - [DEBUG] - from org.hibernate.validator.internal.xml.ValidationXmlParser in play-akka.actor.default-dispatcher-4 
+Trying to load META-INF/validation.xml for XML based Validator configuration.
+
+2017-05-18 02:17:27,635 - [DEBUG] - from org.hibernate.validator.internal.xml.ValidationXmlParser in play-akka.actor.default-dispatcher-4 
+No META-INF/validation.xml found. Using annotation based configuration only.
+
+2017-05-18 02:17:28,314 - [DEBUG] - from org.hibernate.validator.resourceloading.PlatformResourceBundleLocator in play-akka.actor.default-dispatcher-4 
+ValidationMessages not found.
+
+2017-05-18 02:17:28,316 - [DEBUG] - from org.hibernate.validator.resourceloading.PlatformResourceBundleLocator in play-akka.actor.default-dispatcher-4 
+org.hibernate.validator.ValidationMessages found.
+
+2017-05-18 02:17:28,342 - [DEBUG] - from org.springframework.beans.CachedIntrospectionResults in play-akka.actor.default-dispatcher-4 
+Not strongly caching class [controllers.ArtistController$NumForm] because it is not cache-safe
+
+2017-05-18 02:17:28,452 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-4 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 1 
+
+2017-05-18 02:17:28,470 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-4 
+txn[1001] FindMany type[Artist] origin[-LiaZ.DhnxH2.B48xKI] exeMicros[35112] rows[1] name[] predicates[t0.id = ? ] bind[1]
+
+2017-05-18 11:07:06,542 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-2 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 1  
+
+2017-05-18 11:07:06,543 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-2 
+txn[1002] FindBean type[Artist] origin[BRYn8g.DhnxH1.BNPN-o] exeMicros[1464] rows[1] bind[1]
+
+2017-05-18 11:29:11,006 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-6 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0
+
+2017-05-18 11:29:11,014 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-6 
+txn[1003] FindMany type[Artist] origin[Co5WUo.DhnxH2.WqdSG] exeMicros[7657] rows[1] name[] predicates[] bind[]
+
+2017-05-18 11:29:17,901 - [DEBUG] - from org.springframework.beans.CachedIntrospectionResults in play-akka.actor.default-dispatcher-8 
+Not strongly caching class [controllers.authController$UserLogin] because it is not cache-safe
+
+2017-05-18 11:29:48,369 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
+select t0.id c0, t0.name c1, t0.password c2, t0.mail c3, t0.created c4, t0.modify c5 from muser t0 where t0.password = 'test7642'  and t0.mail = 'oge_oge1192@hotmail.co.jp'  order by t0.id
+
+2017-05-18 11:29:48,376 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-7 
+txn[1004] FindMany type[Muser] origin[Bss_8z.CwkEVt.LBoZI] exeMicros[7345] rows[1] name[] predicates[t0.password = ?  and t0.mail = ? ] bind[test7642,oge_oge1192@hotmail.co.jp]
+
+2017-05-18 11:29:48,399 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0
+
+2017-05-18 11:29:48,403 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-9 
+txn[1005] FindMany type[Artist] origin[Co5WUo.DhnxH2.WqdSG] exeMicros[3898] rows[1] name[] predicates[] bind[]
+
+2017-05-18 11:30:00,218 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 1 
+
+2017-05-18 11:30:00,221 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-9 
+txn[1006] FindMany type[Artist] origin[-LiaZ.DhnxH2.B48xKI] exeMicros[3403] rows[1] name[] predicates[t0.id = ? ] bind[1]
+
+2017-05-18 11:30:36,075 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 1 
+
+2017-05-18 11:30:36,076 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-7 
+txn[1007] FindMany type[Artist] origin[-LiaZ.DhnxH2.B48xKI] exeMicros[1489] rows[1] name[] predicates[t0.id = ? ] bind[1]
+
+2017-05-18 11:30:51,022 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 1  
+
+2017-05-18 11:30:51,029 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-12 
+txn[1008] FindBean type[Artist] origin[BRYn8g.DhnxH1.BNPN-o] exeMicros[7520] rows[1] bind[1]
+
+2017-05-18 11:30:58,868 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-11 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 1  
+
+2017-05-18 11:30:58,872 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-11 
+txn[1009] FindBean type[Artist] origin[BRYn8g.DhnxH1.BNPN-o] exeMicros[4402] rows[1] bind[1]
+
+2017-05-18 11:41:37,500 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.id c0, t0.name c1, t0.password c2, t0.mail c3, t0.url c4, t0.created c5, t0.modify c6 from office_model t0
+
+2017-05-18 11:41:37,506 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-13 
+txn[1010] FindMany type[OfficeModel] origin[Co5WUo.D1UWj4.BIwxzN] exeMicros[6794] rows[1] name[] predicates[] bind[]
+
+2017-05-18 11:41:43,502 - [DEBUG] - from org.springframework.beans.CachedIntrospectionResults in play-akka.actor.default-dispatcher-13 
+Not strongly caching class [controllers.authController$OfficeLogin] because it is not cache-safe
+
+2017-05-18 11:42:57,843 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-18 
+select t0.id c0, t0.name c1, t0.password c2, t0.mail c3, t0.url c4, t0.created c5, t0.modify c6 from office_model t0 where t0.password = 'testoffice'  and t0.mail = 'test@email.com'  order by t0.id
+
+2017-05-18 11:42:57,845 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-18 
+txn[1011] FindMany type[OfficeModel] origin[PfS0h.D1UWj4.B4p-fI] exeMicros[5008] rows[0] name[] predicates[t0.password = ?  and t0.mail = ? ] bind[testoffice,test@email.com]
+
+2017-05-18 11:43:23,281 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.id c0, t0.name c1, t0.password c2, t0.mail c3, t0.url c4, t0.created c5, t0.modify c6 from office_model t0 where t0.password = 'testoffice'  and t0.mail = 'test@mail'  order by t0.id
+
+2017-05-18 11:43:23,283 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-20 
+txn[1012] FindMany type[OfficeModel] origin[PfS0h.D1UWj4.B4p-fI] exeMicros[2991] rows[0] name[] predicates[t0.password = ?  and t0.mail = ? ] bind[testoffice,test@mail]
+
+2017-05-18 11:43:35,100 - [DEBUG] - from org.springframework.beans.CachedIntrospectionResults in play-akka.actor.default-dispatcher-21 
+Not strongly caching class [models.OfficeModel] because it is not cache-safe
+
+2017-05-18 11:46:04,805 - [DEBUG] - from org.springframework.beans.CachedIntrospectionResults in play-akka.actor.default-dispatcher-19 
+Not strongly caching class [models.Artist] because it is not cache-safe
+
+2017-05-18 11:48:19,222 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
+insert into artist (name, sex, age, officeid, officename, typeid, wordprice, rate, created, modify) values ('test2',2,18,2,'test',1,100,3.0,2017-05-18 11:48:19.221,2017-05-18 11:48:19.222)
+
+2017-05-18 11:48:19,257 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-19 
+txn[1013] Inserted [Artist] [2]
+
+2017-05-18 11:48:19,312 - [DEBUG] - from org.avaje.ebean.TXN in play-akka.actor.default-dispatcher-19 
+txn[1013] Commit
+
+2017-05-18 11:48:19,331 - [DEBUG] - from com.avaje.ebeaninternal.server.lib.thread.ThreadPool in play-akka.actor.default-dispatcher-19 
+ThreadPool grow created [Ebean-default.0] size[0]
+
+2017-05-18 11:48:19,376 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0
+
+2017-05-18 11:48:19,380 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-19 
+txn[1014] FindMany type[Artist] origin[Co5WUo.DhnxH2.CeTbBb] exeMicros[8262] rows[2] name[] predicates[] bind[]
+
+2017-05-18 11:48:25,100 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-26 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0
+
+2017-05-18 11:48:25,102 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-26 
+txn[1015] FindMany type[Artist] origin[Co5WUo.DhnxH2.WqdSG] exeMicros[2262] rows[2] name[] predicates[] bind[]
+
+2017-05-18 11:48:32,441 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
+select t0.id c0, t0.name c1, t0.sex c2, t0.age c3, t0.officeid c4, t0.officename c5, t0.typeid c6, t0.wordprice c7, t0.rate c8, t0.created c9, t0.modify c10 from artist t0 where t0.id = 2 
+
+2017-05-18 11:48:32,443 - [DEBUG] - from org.avaje.ebean.SUM in play-akka.actor.default-dispatcher-19 
+txn[1016] FindMany type[Artist] origin[-LiaZ.DhnxH2.B48xKI] exeMicros[4763] rows[1] name[] predicates[t0.id = ? ] bind[2]
+
+2017-05-18 12:15:24,182 - [INFO] - from com.jolbox.bonecp.BoneCP in pool-4-thread-3 
+Shutting down connection pool...
+
+2017-05-18 12:15:24,183 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2017-05-18 12:15:24,185 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 12:15:24,185 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 12:15:24,185 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 12:15:24,186 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered JMImplementation:type=MBeanServerDelegate
+
+2017-05-18 12:15:24,608 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=ClassLoading
+
+2017-05-18 12:15:24,617 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.ClassLoadingImpl
+
+2017-05-18 12:15:24,617 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=ClassLoading
+
+2017-05-18 12:15:24,618 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=ClassLoading
+
+2017-05-18 12:15:24,618 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:type=ClassLoading
+
+2017-05-18 12:15:24,618 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=ClassLoading
+
+2017-05-18 12:15:24,620 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=Compilation
+
+2017-05-18 12:15:24,621 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.CompilationImpl
+
+2017-05-18 12:15:24,621 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=Compilation
+
+2017-05-18 12:15:24,621 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=Compilation
+
+2017-05-18 12:15:24,621 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:type=Compilation
+
+2017-05-18 12:15:24,621 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=Compilation
+
+2017-05-18 12:15:24,623 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=Memory
+
+2017-05-18 12:15:24,626 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryImpl
+
+2017-05-18 12:15:24,627 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=Memory
+
+2017-05-18 12:15:24,628 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=Memory
+
+2017-05-18 12:15:24,628 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:type=Memory
+
+2017-05-18 12:15:24,628 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=Memory
+
+2017-05-18 12:15:24,629 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=GarbageCollector,name=Copy
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.GarbageCollectorImpl
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=GarbageCollector,name=Copy
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=GarbageCollector,name=Copy
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=Copy,type=GarbageCollector
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=GarbageCollector,name=Copy
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=GarbageCollector,name=MarkSweepCompact
+
+2017-05-18 12:15:24,632 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.GarbageCollectorImpl
+
+2017-05-18 12:15:24,633 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=GarbageCollector,name=MarkSweepCompact
+
+2017-05-18 12:15:24,633 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=GarbageCollector,name=MarkSweepCompact
+
+2017-05-18 12:15:24,633 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=MarkSweepCompact,type=GarbageCollector
+
+2017-05-18 12:15:24,633 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=GarbageCollector,name=MarkSweepCompact
+
+2017-05-18 12:15:24,633 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=MemoryManager,name=CodeCacheManager
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryManagerImpl
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=MemoryManager,name=CodeCacheManager
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=MemoryManager,name=CodeCacheManager
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=CodeCacheManager,type=MemoryManager
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=MemoryManager,name=CodeCacheManager
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=GarbageCollector,name=Copy
+
+2017-05-18 12:15:24,634 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=GarbageCollector,name=MarkSweepCompact
+
+2017-05-18 12:15:24,637 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=MemoryPool,name=Code Cache
+
+2017-05-18 12:15:24,639 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryPoolImpl
+
+2017-05-18 12:15:24,640 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=MemoryPool,name=Code Cache
+
+2017-05-18 12:15:24,640 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=MemoryPool,name=Code Cache
+
+2017-05-18 12:15:24,640 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=Code Cache,type=MemoryPool
+
+2017-05-18 12:15:24,640 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=MemoryPool,name=Code Cache
+
+2017-05-18 12:15:24,641 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=MemoryPool,name=Eden Space
+
+2017-05-18 12:15:24,641 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryPoolImpl
+
+2017-05-18 12:15:24,642 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=MemoryPool,name=Eden Space
+
+2017-05-18 12:15:24,642 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=MemoryPool,name=Eden Space
+
+2017-05-18 12:15:24,642 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=Eden Space,type=MemoryPool
+
+2017-05-18 12:15:24,642 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=MemoryPool,name=Eden Space
+
+2017-05-18 12:15:24,643 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=MemoryPool,name=Survivor Space
+
+2017-05-18 12:15:24,643 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryPoolImpl
+
+2017-05-18 12:15:24,644 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=MemoryPool,name=Survivor Space
+
+2017-05-18 12:15:24,644 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=MemoryPool,name=Survivor Space
+
+2017-05-18 12:15:24,644 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=Survivor Space,type=MemoryPool
+
+2017-05-18 12:15:24,644 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=MemoryPool,name=Survivor Space
+
+2017-05-18 12:15:24,644 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=MemoryPool,name=Tenured Gen
+
+2017-05-18 12:15:24,645 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryPoolImpl
+
+2017-05-18 12:15:24,646 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=MemoryPool,name=Tenured Gen
+
+2017-05-18 12:15:24,647 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=MemoryPool,name=Tenured Gen
+
+2017-05-18 12:15:24,647 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=Tenured Gen,type=MemoryPool
+
+2017-05-18 12:15:24,648 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=MemoryPool,name=Tenured Gen
+
+2017-05-18 12:15:24,649 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=MemoryPool,name=Perm Gen
+
+2017-05-18 12:15:24,650 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.MemoryPoolImpl
+
+2017-05-18 12:15:24,651 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=MemoryPool,name=Perm Gen
+
+2017-05-18 12:15:24,651 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=MemoryPool,name=Perm Gen
+
+2017-05-18 12:15:24,651 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:name=Perm Gen,type=MemoryPool
+
+2017-05-18 12:15:24,652 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=MemoryPool,name=Perm Gen
+
+2017-05-18 12:15:24,655 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,659 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for com.sun.management.UnixOperatingSystem
+
+2017-05-18 12:15:24,659 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,659 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,659 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,660 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,662 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=Runtime
+
+2017-05-18 12:15:24,666 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.RuntimeImpl
+
+2017-05-18 12:15:24,667 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=Runtime
+
+2017-05-18 12:15:24,667 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=Runtime
+
+2017-05-18 12:15:24,667 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:type=Runtime
+
+2017-05-18 12:15:24,667 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=Runtime
+
+2017-05-18 12:15:24,671 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=Threading
+
+2017-05-18 12:15:24,682 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.ThreadImpl
+
+2017-05-18 12:15:24,684 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.lang:type=Threading
+
+2017-05-18 12:15:24,684 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.lang:type=Threading
+
+2017-05-18 12:15:24,684 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.lang:type=Threading
+
+2017-05-18 12:15:24,685 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.lang:type=Threading
+
+2017-05-18 12:15:24,686 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.util.logging:type=Logging
+
+2017-05-18 12:15:24,700 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.ManagementFactoryHelper$PlatformLoggingImpl
+
+2017-05-18 12:15:24,701 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.util.logging:type=Logging
+
+2017-05-18 12:15:24,702 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.util.logging:type=Logging
+
+2017-05-18 12:15:24,703 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.util.logging:type=Logging
+
+2017-05-18 12:15:24,703 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.util.logging:type=Logging
+
+2017-05-18 12:15:24,707 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.nio:type=BufferPool,name=direct
+
+2017-05-18 12:15:24,710 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.ManagementFactoryHelper$1
+
+2017-05-18 12:15:24,710 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.nio:type=BufferPool,name=direct
+
+2017-05-18 12:15:24,712 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.nio:type=BufferPool,name=direct
+
+2017-05-18 12:15:24,713 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.nio:name=direct,type=BufferPool
+
+2017-05-18 12:15:24,714 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.nio:type=BufferPool,name=direct
+
+2017-05-18 12:15:24,714 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.nio:type=BufferPool,name=mapped
+
+2017-05-18 12:15:24,716 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.ManagementFactoryHelper$1
+
+2017-05-18 12:15:24,718 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = java.nio:type=BufferPool,name=mapped
+
+2017-05-18 12:15:24,718 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = java.nio:type=BufferPool,name=mapped
+
+2017-05-18 12:15:24,719 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object java.nio:name=mapped,type=BufferPool
+
+2017-05-18 12:15:24,720 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered java.nio:type=BufferPool,name=mapped
+
+2017-05-18 12:15:24,726 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=GarbageCollector,name=Copy
+
+2017-05-18 12:15:24,727 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=GarbageCollector,name=MarkSweepCompact
+
+2017-05-18 12:15:24,728 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,728 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = java.lang:type=OperatingSystem
+
+2017-05-18 12:15:24,729 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = com.sun.management:type=HotSpotDiagnostic
+
+2017-05-18 12:15:24,734 - [DEBUG] - from javax.management.misc in pool-4-thread-3 
+Building MBeanInfo for sun.management.HotSpotDiagnostic
+
+2017-05-18 12:15:24,736 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ObjectName = com.sun.management:type=HotSpotDiagnostic
+
+2017-05-18 12:15:24,736 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+name = com.sun.management:type=HotSpotDiagnostic
+
+2017-05-18 12:15:24,737 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+Send create notification of object com.sun.management:type=HotSpotDiagnostic
+
+2017-05-18 12:15:24,738 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+JMX.mbean.registered com.sun.management:type=HotSpotDiagnostic
+
+2017-05-18 12:15:24,739 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = com.jolbox.bonecp:type=BoneCP
+
+2017-05-18 12:15:24,740 - [DEBUG] - from javax.management.mbeanserver in pool-4-thread-3 
+ name = com.jolbox.bonecp:type=BoneCPConfig
+
+2017-05-18 12:15:24,740 - [INFO] - from com.jolbox.bonecp.BoneCP in pool-4-thread-3 
+Connection pool has been shutdown.
+
+2017-05-18 12:15:24,741 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in pool-4-thread-3 
+Connection pool has been shut down
+
